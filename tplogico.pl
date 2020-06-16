@@ -2,6 +2,9 @@
 
 %% El punto de encuentro es en Ciudad Evita. El organizador es agustin.
 
+asado(agustin,ciudadEvita).
+asado(juanPerez,almagro).
+
 invitado(agustin).
 invitado(gabriel).
 invitado(martin).
@@ -47,7 +50,7 @@ quedaEn(parqueChacabuco,bsas).
 
 %% Se toma en cuenta vivir cerca como estar dentro de CABA o La Matanza).
 
-estaCerca(UnaCiudad,UnaCiudad).
+%estaCerca(UnaCiudad,UnaCiudad).
 estaCerca(UnaCiudad,OtraCiudad):-
     quedaEn(UnaCiudad,Zona),
     quedaEn(OtraCiudad,Zona).
@@ -70,6 +73,7 @@ leAlcanzaElDineroA(Invitado,DineroGastadoEnViaje,DineroDisponible) :-
 %% se puede aplicar el concepto de inversibilidad para que me indique quién o quiénes hacen cumplir el predicado.
 
 puedeAsistir(Invitado,CiudadAsado) :-
+    asado(_,CiudadAsado),
     invitado(Invitado),
     estaDisponible(Invitado),
     clima(CiudadAsado,noEstaLloviendo),
