@@ -1,5 +1,4 @@
-# Titulo del ejercicio: 
-Sale asado con los pibes
+# Sale asado con los pibes
 ### Planteo del problema: 
 Si no llueve en mi ciudad y la mayoría de mis amigos pueden, me junto con ellos y hago asado en mi casa. Hoy no está lloviendo y casi todos pueden. Por lo tanto hoy hago asado. 
 
